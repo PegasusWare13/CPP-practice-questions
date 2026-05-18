@@ -1,3 +1,7 @@
+/*Define a class Rectangle with private members int length and int width. 
+Implement a constructor to set the dimensions. Implement two public methods:
+calculate_area() which returns the product of length and width, and calculate_perimeter() which returns 2 * (length + width).*/
+
 #include <iostream>
 using namespace std;
     //class "Rectangle"
