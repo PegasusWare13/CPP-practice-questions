@@ -24,8 +24,6 @@ using namespace std;
     };
 int main()
 {
-
-
     Rectangle rect1(3,2);
     cout<<"Dimensions of Rectangle: "<<rect1.getLength()<<"x"<<rect1.getWidth()<<endl;
     cout<<"Area = "<< rect1.calculate_area()<<endl;
