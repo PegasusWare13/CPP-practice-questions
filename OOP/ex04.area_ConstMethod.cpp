@@ -28,3 +28,8 @@ int main()
     cout<<endl<<"Area of given circle = "<<c1.get_area();
     return 0;
 }
+/*
+Enter the radius of the circle = 2
+
+Area of given circle = 12.5664
+*/
