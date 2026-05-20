@@ -25,3 +25,6 @@ int main()
     std::cout<<b1.getdetails();
     return 0;
 }
+/*
+The C++ Programming Language | Bjarne Stroustrup | 0321563840
+*/
