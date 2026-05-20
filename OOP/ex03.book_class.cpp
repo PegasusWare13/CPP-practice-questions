@@ -26,5 +26,6 @@ int main()
     return 0;
 }
 /*
+OUTPUT:
 The C++ Programming Language | Bjarne Stroustrup | 0321563840
 */
