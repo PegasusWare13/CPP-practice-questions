@@ -16,20 +16,22 @@ class BankAccount
     {
       cout<<"Account No. "<<account_number<<" has Bank Balance = "<<balance;
     }
-    void deposit(double amount)
+    bool deposit(double amount)
     {
       double old_balance_temp = balance;
       bool status = (amount>0);
       if(status){
         balance += amount;
         cout<<"Deposit SUCCESSFULL"<<endl<<"Previous Balance: "<<old_balance_temp<<endl<<"New Balance: "<<balance<<endl;
+        return true;
       }
       else
       {
         cout<<"Deposit Value cannot be negative."<<endl;
+        return false;
       }
     }
-    void withdraw(double amount)
+    bool withdraw(double amount)
     {
       double old_balance_temp = balance;
       bool status = balance>=amount;
@@ -37,10 +39,12 @@ class BankAccount
       {
         balance-=amount;
         cout<<"Withdraw SUCCESSFULL"<<endl<<"Previous Balance: "<<old_balance_temp<<endl<<"New Balance: "<<balance;
+        return true;
       }
       else if(!status)
       {
         cout<<"Requested Withdraw Amount ["<<amount<<"] greater than current Bank Balance ["<<balance<<"]";
+        return false;
       }
     }
 };
